@@ -70,13 +70,14 @@ card-game/
 └── README.md
 ```
 
-## การติดตั้งและรันโปรเจกต์ (Installation & Running)
+## 🚀 การติดตั้งและรันโปรเจกต์ (Installation & Running)
 
 ### ข้อกำหนดเบื้องต้น (Prerequisites)
 - Node.js (version 14 หรือสูงกว่า)
 - npm หรือ yarn
+- เบราว์เซอร์ที่รองรับ WebSocket (Chrome, Firefox, Safari, Edge)
 
-### วิธีการติดตั้ง (Installation Steps)
+### 📦 วิธีการติดตั้ง (Installation Steps)
 
 1. **Clone repository**
 ```bash
@@ -86,51 +87,40 @@ cd card-game
 
 2. **ติดตั้ง dependencies ทั้งหมด**
 ```bash
-npm run install-all
-```
-หรือติดตั้งแยกทีละส่วน:
-```bash
-# Root dependencies
-npm install
-
-# Server dependencies
+# ติดตั้ง dependencies สำหรับ server
 cd server
 npm install
 
-# Client dependencies
+# ติดตั้ง dependencies สำหรับ client
 cd ../client
 npm install
 ```
 
-### วิธีการรันโปรเจกต์ (Running the Application)
+### ▶️ วิธีการรันโปรเจกต์ (Running the Application)
 
-#### รันทั้ง Client และ Server พร้อมกัน (แนะนำ)
+**⚠️ สำคัญ: ต้องรัน Server และ Client แยกกันใน Terminal คนละอัน**
+
+#### Terminal 1 - รัน Backend Server:
 ```bash
-npm run dev
-```
-
-#### รัน Server และ Client แยกกัน
-
-**Terminal 1 - รัน Server:**
-```bash
-npm run server
-# หรือ
 cd server
 npm start
 ```
-Server จะรันที่: `http://localhost:3001`
+✅ Server จะรันที่: **http://localhost:3001**
 
-**Terminal 2 - รัน Client:**
+#### Terminal 2 - รัน Frontend Client:
 ```bash
-npm run client
-# หรือ
 cd client
 npm start
 ```
-Client จะรันที่: `http://localhost:3000`
+✅ Client จะรันที่: **http://localhost:3000**
 
-### เข้าใช้งานแอปพลิเคชัน
-เปิดเบราว์เซอร์และไปที่: `http://localhost:3000`
+### 🌐 เข้าใช้งานแอปพลิเคชัน
+เปิดเบราว์เซอร์และไปที่: **http://localhost:3000**
+
+### 🎮 ลิงก์สำหรับใช้งาน (Access Links)
+- **เว็บแอปพลิเคชัน (Frontend):** http://localhost:3000
+- **API Server (Backend):** http://localhost:3001
+- **API Health Check:** http://localhost:3001/
 
 ## วิธีการเล่น (How to Play)
 
