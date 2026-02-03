@@ -1,8 +1,19 @@
-# 🎮 สรุปโปรเจกต์ Card Game - Multiplayer
+# 📢 สรุปโปรเจกต์ Card Game - Multiplayer
 
-## ✅ ตอบคำถาม: "เกิดอะไรขึ้น สามารถใช้งานได้ยัง ถ้าได้แล้วสร้าง link สำหรับรันเว็บมาหน่อย"
+## ✅ ตอบคำถาม
 
-### 📋 สถานะปัจจุบัน
+### 1. "เกิดอะไรขึ้น สามารถใช้งานได้ยัง ถ้าได้แล้วสร้าง link สำหรับรันเว็บมาหน่อย"
+✅ **เสร็จแล้ว!** แอปพลิเคชันทำงานได้เต็มรูปแบบ  
+🔗 **Link:** http://localhost:3000 (สำหรับ local development)
+
+### 2. "เอาขึ้นเว็บให้หน่อย"
+✅ **พร้อมแล้ว!** มีคู่มือ deploy ครบถ้วน  
+📘 **อ่านคู่มือ:** [DEPLOYMENT.md](DEPLOYMENT.md) หรือ [DEPLOY-QUICK.md](DEPLOY-QUICK.md)  
+🚀 **Deploy ได้ที่:** Render, Vercel, Railway (ฟรี!)
+
+---
+
+## 📋 สถานะปัจจุบัน
 
 **แอปพลิเคชันเสร็จสมบูรณ์และพร้อมใช้งานแล้ว! ✅**
 
@@ -47,6 +58,46 @@ npm start
 
 #### ขั้นตอนที่ 4: เปิดเบราว์เซอร์
 ไปที่: **http://localhost:3000**
+
+---
+
+## 🚀 วิธี Deploy ขึ้นเว็บ
+
+### ต้องการให้คนอื่นเข้าเล่นได้จาก Internet?
+
+เราได้เตรียมคู่มือ deploy ครบถ้วนแล้ว! เลือกอ่านตามความต้องการ:
+
+#### 📘 คู่มือฉบับเต็ม (แนะนำ)
+- **[DEPLOYMENT.md](DEPLOYMENT.md)** - คู่มือ deploy แบบละเอียด
+  - Render.com (แนะนำ - ฟรี, ง่าย)
+  - Vercel + Render (เร็ว, ฟรี)
+  - Railway (ครบเครื่อง)
+  - Troubleshooting guide
+
+#### 📗 คู่มือฉบับย่อ (สำหรับมือใหม่)
+- **[DEPLOY-QUICK.md](DEPLOY-QUICK.md)** - เริ่มต้น deploy ใน 15 นาที
+  - Checklist แบบ step-by-step
+  - ภาพประกอบชัดเจน
+  - Quick fixes สำหรับปัญหาที่พบบ่อย
+
+#### 📌 สรุปแบบเร็ว
+- **[เอาขึ้นเว็บแล้ว.md](เอาขึ้นเว็บแล้ว.md)** - สรุปทุกอย่างในที่เดียว
+
+### 🎯 ขั้นตอนคร่าวๆ (ใช้ Render - ฟรี)
+
+1. ไปที่ https://render.com และ sign in ด้วย GitHub
+2. Deploy Backend (5 นาที)
+   - New Web Service → เลือก repo นี้
+   - Root Directory: `server`
+3. Deploy Frontend (5 นาที)  
+   - New Static Site → เลือก repo เดียวกัน
+   - Root Directory: `client`
+4. ตั้ง Environment Variables
+5. ทดสอบและแชร์ URL!
+
+**รายละเอียดเต็ม:** อ่านใน [DEPLOY-QUICK.md](DEPLOY-QUICK.md)
+
+---
 
 ### 📸 ตัวอย่างหน้าจอ
 
