@@ -1,6 +1,12 @@
 # Card Game - Multiplayer
 เว็บแอปพลิเคชันเล่นไพ่แบบ Multiplayer
 
+> 🚀 **[คู่มือการ Deploy ขึ้นเว็บ](DEPLOYMENT.md)** - วิธีนำแอปขึ้นเว็บให้คนอื่นเข้าเล่นได้
+
+## 🌐 Demo / Live URL
+- **Production URL:** (เติมหลัง deploy)
+- **Development:** http://localhost:3000
+
 ## คุณสมบัติหลัก (Features)
 
 ### ระบบ Authentication
@@ -164,6 +170,43 @@ npm start
 - `game:started` - เกมเริ่มแล้ว
 - `game:card-played` - มีการเล่นไพ่
 - `game:error` - เกิดข้อผิดพลาด
+
+## 🚀 Deployment (การ Deploy ขึ้นเว็บ)
+
+ต้องการนำแอปขึ้นเว็บให้คนอื่นเข้าเล่นได้?
+
+👉 **อ่านคู่มือการ Deploy ฉบับสมบูรณ์ที่: [DEPLOYMENT.md](DEPLOYMENT.md)**
+
+### Quick Deploy Options:
+
+1. **[Render.com](https://render.com)** (แนะนำ - ฟรี)
+   - Deploy ทั้ง Backend และ Frontend
+   - Free tier รองรับ Node.js และ Static sites
+   - [ดูคู่มือใน DEPLOYMENT.md](DEPLOYMENT.md#ตัวเลือกที่-1-rendercom-แนะนำ---ฟรี-และง่าย)
+
+2. **[Vercel](https://vercel.com) + [Render](https://render.com)**
+   - Vercel สำหรับ Frontend (เร็วมาก)
+   - Render สำหรับ Backend
+   - [ดูคู่มือใน DEPLOYMENT.md](DEPLOYMENT.md#ตัวเลือกที่-2-vercel-frontend--render-backend)
+
+3. **[Railway.app](https://railway.app)**
+   - Deploy ทั้งหมดที่เดียว
+   - $5 free credit/เดือน
+   - [ดูคู่มือใน DEPLOYMENT.md](DEPLOYMENT.md#ตัวเลือกที่-3-railway)
+
+### Environment Variables
+
+**Backend:**
+```bash
+PORT=10000
+NODE_ENV=production
+ALLOWED_ORIGINS=https://your-frontend-url.com
+```
+
+**Frontend:**
+```bash
+REACT_APP_SOCKET_URL=https://your-backend-url.com
+```
 
 ## License
 MIT

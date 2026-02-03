@@ -1,0 +1,30 @@
+services:
+  # Backend Server
+  - type: web
+    name: card-game-server
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: PORT
+        sync: false
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /
+
+  # Frontend Client (Static Site)
+  - type: web
+    name: card-game-client
+    env: static
+    region: oregon
+    plan: free
+    buildCommand: cd client && npm install && npm run build
+    staticPublishPath: ./client/build
+    envVars:
+      - key: REACT_APP_SOCKET_URL
+        fromService:
+          type: web
+          name: card-game-server
+          envVarKey: RENDER_EXTERNAL_URL
